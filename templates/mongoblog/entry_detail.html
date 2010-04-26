@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="entry">
+        <h2>{{ entry.title }}</h2>
+        <div class="details">{{ entry.created|date }}</div>
+        <div class="content">{{ entry.body }}</div>
+    </div>
+{% endblock %}

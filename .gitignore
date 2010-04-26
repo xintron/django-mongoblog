@@ -1,0 +1,13 @@
+# Compiled python code
+*.pyc
+
+# Compiled translationfiles
+*.mo
+
+db.*
+*.swp
+
+__init__.py
+manage.py
+urls.py
+settings.py

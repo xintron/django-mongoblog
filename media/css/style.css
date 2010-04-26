@@ -1,0 +1,118 @@
+a {
+    color: #0099FF;
+    outline: none;
+    text-decoration: none;
+}
+a:hover { color: #4DB8FF; }
+
+:focus {
+    outline: none;
+}
+
+body {
+    color: #444;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 0.875em; /* 14px */
+    line-height: 1.5; /* 18px */
+    padding: 2em;
+}
+
+html {
+    background: #fff;
+    height: 100%;
+}
+
+h1, h2, h3, h4 {
+    text-shadow: 2px 2px #eee;
+    font-family: 'georgia', serif;
+}
+
+#container {
+    width: 50em;
+    margin: 0 auto;
+}
+
+#header {
+    overflow: hidden;
+    margin: 0 0 2em;
+}
+
+#header a {
+    color: #444;
+}
+#header a:hover {
+    color: #4DB8FF;
+}
+
+#header h1 {
+    float: left;
+    font-size: 2em;
+}
+
+#header ul.menu {
+    float: right;
+    text-shadow: 1px 1px #eee;
+}
+
+#header ul.menu li {
+    display: inline-block;
+    margin: 0 0 0 1em;
+}
+
+#header div.search {
+    clear: right;
+    float: right;
+    margin: 1em 0 0;
+}
+
+#header div.search input[type=text] {
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 0.5em 1em;
+    width: 15em;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+}
+
+.idiom {
+    margin: 1em auto 1em;
+    clear: both;
+    border-top: 1px dotted #ddd;
+    width: 46em;
+}
+
+.footer,
+.footer a {
+    text-align: center;
+    color: #999;
+    clear: both;
+}
+
+.entry {
+    margin: 0 0 2em;
+    clear: both;
+}
+
+.entry .line {
+    border-bottom: 1px dotted #ddd;
+    width: 45.714em;
+    margin: 2em auto 0;
+}
+
+.entry h2 {
+    font-size: 2em;
+    margin: 0 0 0.5em;
+}
+.entry h2 a {
+    color: #444;
+}
+.entry h2 a:hover {
+    color: #4DB8FF;
+}
+
+.entry .details {
+    margin: 0 0 0 -14.5em;
+    float: left;
+    text-align: right;
+    width: 12.5em;
+}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+    {% if entry_list %}
+        {% for entry in entry_list %}
+        <div class="entry">
+            <h2><a href="{{ entry.get_absolute_url }}">{{ entry.title }}</a></h2>
+            <div class="details">{{ entry.created|date }}</div>
+            <div class="content">{{ entry.body }}</div>
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endblock %}
