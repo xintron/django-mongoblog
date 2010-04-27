@@ -24,6 +24,15 @@ change your settings.py and add:
     
     TEST_RUNNER = 'mongoblog.testrunner.TestRunner'
 
+## Settings
+The following settings are available for the database connection.
+
+    MONGOBLOG_DATABASE_NAME
+    MONGOBLOG_DATABASE_USERNAME
+    MONGOBLOG_DATABASE_PASSWORD
+    MONGOBLOG_DATABASE_HOST
+    MONGOBLOG_DATABASE_PORT
+
 ## Dependencies
 
  * Django-1.2-beta-1 (should work with earlier versions without the use of the testrunner)
@@ -37,8 +46,6 @@ Check mongoblog/views.py and the templates for example usage. To add posts to yo
 
 and use the following to add a test Entry.
 
-    from mongoengine import connect
-    connect('myDatabase')
     from mongoblog.models import Entry
     # status is needed to make the post show up on the blog, otherwise it will default to a draft which will not be visible
     Entry(title='Hello world!', body='This is a test entry!', status=Entry.STATUS_PUBLIC).save()
