@@ -1,4 +1,5 @@
-from testrunner import TestCase
+from mongorunner import TestCase
+
 from models import Entry
 
 class SimpleTest(TestCase):

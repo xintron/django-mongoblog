@@ -20,9 +20,9 @@ and to your urls.py:
 
 The connection is currently made in mongoblog.views to support testing for
 mongodb using the testrunner shipped with this app. To use the testrunner,
-change your settings.py and add:
+install the django-mongorunner, change your settings.py and add:
     
-    TEST_RUNNER = 'mongoblog.testrunner.TestRunner'
+    TEST_RUNNER = 'mongorunner.TestRunner'
 
 ## Settings
 The following settings are available for the database connection.
